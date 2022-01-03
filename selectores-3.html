@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores3</title>
+    <style>
+        p { 
+            color: hotpink;
+        }
+        p::first-letter{
+            color: rgb(255, 0, 0);
+        }
+        p::before{
+            content: "🐾" ;
+        }
+        p::after{
+            content: "😎";
+        }
+        p:hover{
+            color: indigo;
+        }
+        div p:nth-child(2){
+            color: lawngreen;
+        }
+        ::placeholder{
+            color: royalblue;
+        }
+        .button {
+             color: #ee0404;
+        }
+        .button:active {
+            color: #fbff06;
+        }
+        
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="nombre">
+    <button class="button">Enviar</button>
+</body>
+</html>
