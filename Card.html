@@ -1,0 +1,334 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            width: 300px;
+            height: 300px;
+            background: plum;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 50%;
+        }
+        .card p{
+            text-align: center;
+            color: royalblue;
+        }
+        .card p:nth-child(3){
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/10593820/pexels-photo-10593820.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="imgfue">
+                <p>Card ejemplo</p>
+                <p>Ejemplo 2</p>
+        </div>
+    </section>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripcion" content="Tarjeta de contacto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo Ivan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <style>
+        :root {
+    --white: #ffffff;
+    --facebook: #1877f2;
+    --twitter: #1DA1F2;
+    --instagram: #E1306C;
+    --youtube: #FF0000;
+    --github: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(81, 81, 81, .5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.target {
+    width: 60rem;
+    height: 45rem;
+    background-color: var(--white);
+    border-radius: 40px;
+    overflow: hidden;
+
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, .5);
+}
+
+.header {
+    width: 100%;
+    height: 16rem;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+.header img {
+    width: 100%;
+    position: absolute;
+    top: -5rem;
+}
+
+.information {
+    width: 100%;
+    height: 29rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information .logo{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 100px;
+    border: 5px solid var(--white);
+    position: absolute;
+    top: -100px;
+}
+
+.information .logo img {
+    width: 100%;
+}
+
+.info  h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-top: 70px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #707070;
+}
+
+.social-networks {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 7.5rem;
+    height: 5rem;
+    margin: 0 15px;
+    border-radius: 10px;
+    background-color: #bbbbbb;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-networks img {
+    height: 2.8rem;
+}
+
+.button.facebook:hover {
+    background-color: var(--facebook);
+}
+
+.button.twitter:hover {
+    background-color: var(--twitter);
+}
+
+.button.instagram:hover {
+    background-color: var(--instagram);
+}
+
+.button.youtube:hover {
+    background-color: var(--youtube);
+}
+
+.button.github:hover {
+    background-color: var(--github);
+}
+
+@media screen and (max-width: 760px){
+    .target {
+        width: 35rem;
+        height: 26.2rem;
+    }
+    .header {
+        height: 9rem;
+    }
+   
+    .information .logo {
+        width: 9.4rem;
+        height: 9.4rem;
+        border: 3px solid var(--white);
+        top: -60px;
+        
+    }
+    .info h1 {
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+    .info h3 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    .social-networks {
+        margin-top: 15px;
+    }
+    .social-networks img{
+        height: 1.8rem;
+    }
+    .button {
+        width: 4.3rem;
+        height: 3rem;
+        margin: 0 10px;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        background: none;
+    }
+    .container {
+        background-color: #C7C7C7;
+    }
+    .target {
+        width: 25rem;
+        height: 45rem;
+    }
+    .header {
+        height: 9.5rem;
+    }
+   
+    .information .logo {
+        top: -35px;
+    }
+    .information .logo img{
+        border-radius: 30px;
+
+    } 
+    .info h1 {
+        font-size: 2.8rem;
+        margin-top: 65px;
+    }
+    .info h3 {
+        font-size: 1.8rem;
+        margin-top: 5px;
+    }
+    .social-networks {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button {
+        width: 12rem;
+        height: 3rem;
+        margin: 5px 0;
+        border-radius: 12px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="target">
+            <section class="header">
+                <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="portada">
+            </section>
+            <section class="information">
+                <div class="logo">
+                    <img src="./img/ivan.jpg" alt="Logo CR">
+                </div>
+                <div class="info">
+                    <h1>Hugo Avila</h1>
+                    <h3>25 años | MX</h3>
+                </div>
+                <div class="social-networks">
+                    <a href="#">
+                        <div class="button facebook">
+                            <img src="./img/facebook.svg" alt="Facebook">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="button twitter">
+                            <img src="./img/twitter.svg" alt="Twitter">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="button instagram">
+                            <img src="./img/instagram.svg" alt="Instagram">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="button youtube">
+                            <img src="./img/youtube.svg" alt="Youtube">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="button github">
+                            <img src="./img/github.svg" alt="Github">
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
